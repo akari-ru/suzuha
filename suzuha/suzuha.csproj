@@ -54,10 +54,16 @@
     <ManifestKeyFile>suzuha_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NetSpell.SpellChecker, Version=2.1.7.41329, Culture=neutral, PublicKeyToken=318b389f0db66e46">
@@ -85,13 +91,18 @@
     <Compile Include="moth\Game\Game.cs" />
     <Compile Include="moth\Game\Npc.cs" />
     <Compile Include="moth\Game\Player.cs" />
+    <Compile Include="moth\Kara\CommentFilter.cs" />
+    <Compile Include="moth\Kara\ParsingEngine.cs" />
     <Compile Include="moth\Moth.cs" />
+    <Compile Include="moth\Threading\AkaThread.cs" />
+    <Compile Include="moth\Threading\VariousProcedures.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="suzuha_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +116,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="moth\Kara\KaraSpecification.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

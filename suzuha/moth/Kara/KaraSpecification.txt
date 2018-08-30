@@ -1,0 +1,24 @@
+﻿
+Kara Specification v 0.1
+
+Kara is an experimental language, whos sole purpose ist to learn, test and experiment with parsing for the infamous dev behind it.
+We will define the language mathematical and try to include custom concepts as the infamous dev is not bound to normal human limits.
+
+
+ Parts
+*-----*
+
+chars:
+atomar particles with different meanings
+
+words:
+strings of chars seperated through a special seperator char - whitespace ' ' (continous whitespace while always collapse to a single seperator)
+
+grouping aka scoping - brackets for this purpose:
+( ), { }, [ ], < >
+
+numbers - at first all ist integer 64bit:
+0-9*
+
+alphabethical chars:
+A-Z, a-z

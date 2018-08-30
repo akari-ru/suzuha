@@ -15,7 +15,7 @@ namespace suzuha.moth.FileTesting
         {
             Console.WriteLine("File System Testing");
             Console.WriteLine("Testing Desktop directories and absolut path..");
-            string path = @"C:\Users\akari\Desktop\";
+            string path = @"C:\Users\tenma\Desktop\";
             Console.WriteLine("path is " + path);
             DriveInfo driveInfo = new DriveInfo("C");
             Console.WriteLine("Current drive name is " + driveInfo.Name);
@@ -36,7 +36,7 @@ namespace suzuha.moth.FileTesting
 
             TestIOPathCreateDir();
             ObjectToXmlTest();
-            string path2 = @"C:\\Users\akari\Desktop\otx_test.xml";
+            string path2 = @"C:\\Users\tenma\Desktop\otx_test.xml";
             var graph = ReadXmlToObjectGraph<List<PersonDataClassTest>>(path2);
 
             Console.WriteLine("Reading object graph from xml file:");
@@ -49,14 +49,14 @@ namespace suzuha.moth.FileTesting
 
         private static void TestIOPathCreateDir()
         {
-            string path = @"C:\\Users\akari\Desktop\testdir\";
+            string path = @"C:\\Users\tenma\Desktop\testdir\";
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
         }
 
         private static void ObjectToXmlTest()
         {
-            string path = @"C:\\Users\akari\Desktop\otx_test.xml";
+            string path = @"C:\\Users\tenma\Desktop\otx_test.xml";
 
             List<PersonDataClassTest> objectGraph = new List<PersonDataClassTest>();
             objectGraph.Add(new PersonDataClassTest()

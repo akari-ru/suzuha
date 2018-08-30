@@ -7,35 +7,57 @@ using System.Threading;
 
 using suzuha.moth;
 using suzuha.moth.FileTesting;
+using suzuha.moth.Threading;
 
 namespace suzuha
 {
     class Program
     {
-        public static void PrintSomething(object state)
-        {
-            Console.WriteLine("We're gonna farm forever..");
-        }
+        static string programmName = "suzuha";
+        static string programmVersion = "v 0.1";
 
         static void Main(string[] args)
         {
-            //Moth.PrintTitle();
-            //Moth.PrintMessage();
-            //var moth = new Moth();
-            //moth.StartNewGame();
+            PrintStartupMessage();
+            ThradingCodeMod();
+            ProgammTerminatedPrompt();
+        }
 
-            //var p = new Program();
-            //TimerCallback callback = new TimerCallback(PrintSomething);
-            //var timer_kun = new Timer(callback, null, 0, 1000);
 
-            //Thread.Sleep(1000 * 10);
-            //timer_kun.Dispose();
-            //Thread.Sleep(1000 * 5);
-            //Console.WriteLine("Press enter to end..");
-            //Console.ReadKey();
+        /* Commandline IO */
 
-            FileTesting.Testing();
+        static void PrintUsage()
+        {
+            throw new NotImplementedException();
+        }
+
+        static void PrintHelp()
+        {
+            throw new NotImplementedException();
+        }
+
+        static void PrintStartupMessage()
+        {
+            Console.WriteLine(programmName + " " + programmVersion + "\n");
+        }
+
+        static void ProgammTerminatedPrompt()
+        {
+            Console.WriteLine("\nPress enter to end..");
             Console.ReadKey();
+        }
+
+
+        /* Code Modules */
+
+        static void FileTestingCodeMod()     // unused ..
+        {
+            FileTesting.Testing();
+        }
+
+        static void ThradingCodeMod()
+        {
+            AkaThread.Execute();
         }
     }
 }
