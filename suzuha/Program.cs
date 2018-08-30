@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Threading;
 
 using suzuha.moth;
+using suzuha.moth.FileTesting;
 
 namespace suzuha
 {
@@ -23,14 +24,17 @@ namespace suzuha
             //var moth = new Moth();
             //moth.StartNewGame();
 
-            var p = new Program();
-            TimerCallback callback = new TimerCallback(PrintSomething);
-            var timer_kun = new Timer(callback, null, 0, 1000);
+            //var p = new Program();
+            //TimerCallback callback = new TimerCallback(PrintSomething);
+            //var timer_kun = new Timer(callback, null, 0, 1000);
 
-            Thread.Sleep(1000 * 10);
-            timer_kun.Dispose();
-            Thread.Sleep(1000 * 5);
-            Console.WriteLine("Press enter to end..");
+            //Thread.Sleep(1000 * 10);
+            //timer_kun.Dispose();
+            //Thread.Sleep(1000 * 5);
+            //Console.WriteLine("Press enter to end..");
+            //Console.ReadKey();
+
+            FileTesting.Testing();
             Console.ReadKey();
         }
     }

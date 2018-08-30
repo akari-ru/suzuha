@@ -67,6 +67,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -78,6 +79,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="moth\Account.cs" />
+    <Compile Include="moth\FileTesting\FileTesting.cs" />
+    <Compile Include="moth\FileTesting\PersonDataClassTest.cs" />
     <Compile Include="moth\Game\Character.cs" />
     <Compile Include="moth\Game\Game.cs" />
     <Compile Include="moth\Game\Npc.cs" />
