@@ -95,6 +95,7 @@
     <Compile Include="moth\Kara\ParsingEngine.cs" />
     <Compile Include="moth\Moth.cs" />
     <Compile Include="moth\Threading\AkaThread.cs" />
+    <Compile Include="moth\Threading\ThreadArrayUnsafe.cs" />
     <Compile Include="moth\Threading\VariousProcedures.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
