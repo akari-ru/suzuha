@@ -19,8 +19,7 @@ namespace suzuha
         static void Main(string[] args)
         {
             PrintStartupMessage();
-            // ThradingCodeMod();
-            StreamingCodeMode();
+            ThradingCodeMod();
             ProgammTerminatedPrompt();
         }
 
@@ -59,11 +58,6 @@ namespace suzuha
         static void ThradingCodeMod()
         {
             AkaThread.Execute();
-        }
-
-        static void StreamingCodeMode()
-        {
-            Streaming.Execute();
         }
     }
 }
