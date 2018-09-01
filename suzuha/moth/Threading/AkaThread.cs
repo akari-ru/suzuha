@@ -20,17 +20,8 @@ namespace suzuha.moth.Threading
         {
             Console.WriteLine("Begin threading ..");
             var t1 = new Thread(new ParameterizedThreadStart(VariousProcedures.WriteHelloWorldTenTimes));
-            t1.Start(100);
+            t1.Start(500);
             t1.Join();
-
-            Console.WriteLine("Trying to produce data inconsistency");
-            var t2 = new Thread(new ThreadStart(ThreadArrayUnsafe.incrementAllFields));
-            var t3 = new Thread(new ThreadStart(ThreadArrayUnsafe.printAllFields));
-            t2.Start();
-            t3.Start();
-            t2.Join();
-            t3.Join();
-
             Console.WriteLine("Ended threading ..");
         }
     }
