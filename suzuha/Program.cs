@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
+using System.Globalization;
+using System.Resources;
+
 using suzuha.moth;
 using suzuha.moth.FileTesting;
 using suzuha.moth.Threading;
@@ -20,7 +23,13 @@ namespace suzuha
         {
             PrintStartupMessage();
             // ThradingCodeMod();
-            StreamingCodeMode();
+            // StreamingCodeMode();
+
+            var rm = new ResourceManager("suzuha.resources", typeof(resources.Resource).Assembly);
+            Console.WriteLine(rm.GetString("introMessage"));
+
+            Console.WriteLine("Nothing to do at the moment.");
+
             ProgammTerminatedPrompt();
         }
 
