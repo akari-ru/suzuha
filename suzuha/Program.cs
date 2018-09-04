@@ -25,7 +25,9 @@ namespace suzuha
             // ThradingCodeMod();
             // StreamingCodeMode();
 
-            var rm = new ResourceManager("suzuha.resources", typeof(resources.Resource).Assembly);
+            PrintCultureInfo();
+
+            var rm = new ResourceManager("suzuha.Properties.Resources", typeof(Program).Assembly);
             Console.WriteLine(rm.GetString("introMessage"));
 
             Console.WriteLine("Nothing to do at the moment.");
@@ -55,6 +57,15 @@ namespace suzuha
         {
             Console.WriteLine("\nPress enter to end..");
             Console.ReadKey();
+        }
+
+        static void PrintCultureInfo()
+        {
+            CultureInfo ci = CultureInfo.CurrentCulture;
+            Console.WriteLine(ci.EnglishName);
+            Console.WriteLine(ci.DisplayName);
+            Console.WriteLine(ci.IsNeutralCulture);
+            Console.WriteLine(ci.Name);
         }
 
 

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace suzuha.resources {
+namespace suzuha.Properties {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace suzuha.resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace suzuha.resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("suzuha.resources.Resource", typeof(Resource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("suzuha.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,11 @@ namespace suzuha.resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Are you sure to abort execution?.
-        /// </summary>
-        internal static string abortPrompt {
-            get {
-                return ResourceManager.GetString("abortPrompt", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This ist an experiment intended commandline tool..
+        ///   Looks up a localized string similar to Hello suzuha!.
         /// </summary>
         internal static string introMessage {
             get {
                 return ResourceManager.GetString("introMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to suzuha.
-        /// </summary>
-        internal static string programName {
-            get {
-                return ResourceManager.GetString("programName", resourceCulture);
             }
         }
     }
