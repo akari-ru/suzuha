@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace suzuha.Properties {
+namespace suzuha.strings {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace suzuha.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("suzuha.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("suzuha.strings.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,74 @@ namespace suzuha.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hello suzuha!.
+        ///   Looks up a localized string similar to Help about suzuha commandline tool.
         /// </summary>
-        internal static string introMessage {
+        internal static string help {
             get {
-                return ResourceManager.GetString("introMessage", resourceCulture);
+                return ResourceManager.GetString("help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hello World Suzuhaa!.
+        /// </summary>
+        internal static string msgIntro {
+            get {
+                return ResourceManager.GetString("msgIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Informations about suzuha.
+        /// </summary>
+        internal static string progamInfo {
+            get {
+                return ResourceManager.GetString("progamInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to suzuha.
+        /// </summary>
+        internal static string programName {
+            get {
+                return ResourceManager.GetString("programName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to v 0.07.
+        /// </summary>
+        internal static string programVersion {
+            get {
+                return ResourceManager.GetString("programVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure to quit suzuha ?.
+        /// </summary>
+        internal static string promptAbort {
+            get {
+                return ResourceManager.GetString("promptAbort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the filepath: .
+        /// </summary>
+        internal static string promptFilepath {
+            get {
+                return ResourceManager.GetString("promptFilepath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to suzuha [subcommand] [flags] [file]*.
+        /// </summary>
+        internal static string usage {
+            get {
+                return ResourceManager.GetString("usage", resourceCulture);
             }
         }
     }

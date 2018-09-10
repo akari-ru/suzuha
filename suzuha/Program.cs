@@ -27,8 +27,8 @@ namespace suzuha
 
             PrintCultureInfo();
 
-            var rm = new ResourceManager("suzuha.Properties.Resources", typeof(Program).Assembly);
-            Console.WriteLine(rm.GetString("introMessage"));
+            var rm = new ResourceManager("suzuha.strings.Resources", typeof(Program).Assembly);
+            Console.WriteLine(rm.GetString("msgIntro"));
 
             Console.WriteLine("Nothing to do at the moment.");
 

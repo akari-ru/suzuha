@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="introMessage" xml:space="preserve">
-    <value>Hello suzuha!</value>
+  <data name="help" xml:space="preserve">
+    <value>Help about suzuha commandline tool</value>
+  </data>
+  <data name="msgIntro" xml:space="preserve">
+    <value>Hello World Suzuhaa!</value>
+  </data>
+  <data name="progamInfo" xml:space="preserve">
+    <value>Informations about suzuha</value>
+  </data>
+  <data name="programName" xml:space="preserve">
+    <value>suzuha</value>
+  </data>
+  <data name="programVersion" xml:space="preserve">
+    <value>v 0.07</value>
+  </data>
+  <data name="promptAbort" xml:space="preserve">
+    <value>Are you sure to quit suzuha ?</value>
+  </data>
+  <data name="promptFilepath" xml:space="preserve">
+    <value>Enter the filepath: </value>
+  </data>
+  <data name="usage" xml:space="preserve">
+    <value>suzuha [subcommand] [flags] [file]*</value>
   </data>
 </root>
