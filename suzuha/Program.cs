@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
-
 using System.Globalization;
 using System.Resources;
 
-using suzuha.moth;
+using suzuha.arc;
 using suzuha.moth.FileTesting;
 using suzuha.moth.Threading;
-using suzuha.arc;
+using suzuha.Arcane;
 
 namespace suzuha
 {
@@ -26,6 +25,7 @@ namespace suzuha
             static bool game = false;
             static bool fileTesting = false;
             static bool kara = false;
+            static bool arcane = false;
 
             static string filePath = null;
 
@@ -33,8 +33,10 @@ namespace suzuha
             public static bool Threading { get => threading; set => threading = value; }
             public static bool Game { get => game; set => game = value; }
             public static bool Kara { get => kara; set => kara = value; }
+            public static bool Arcane { get => arcane; set => arcane = value; }
 
             public static string FilePath { get => filePath; set => filePath = value; }
+            
         }
 
         static void Main(string[] args)
@@ -49,6 +51,8 @@ namespace suzuha
                 GameCodeMod();
             if (ProgramControlContext.Kara)
                 KaraCodeMod();
+            if (ProgramControlContext.Arcane)
+                ArcaneCodeMod();
             ProgammTerminatedPrompt();
         }
 
@@ -98,7 +102,7 @@ namespace suzuha
                 Console.Write(arg + " ");
             }
             Console.WriteLine();
-            var arc = new Arc(args, "f:tgk", "[file]:[threading][game][kara][file]");
+            var arc = new Arc(args, "f:tgka", "[file]:[threading][game][kara][file][arcane]");
             List<Tuple<string, string>> parsed;
             try
             {
@@ -148,6 +152,10 @@ namespace suzuha
                     case "kara":
                         ProgramControlContext.Kara = true;
                         break;
+                    case "a":
+                    case "arcane":
+                        ProgramControlContext.Arcane = true;
+                        break;
                     default:
                         throw new Exception("Invalid Flag Init.");
                 }
@@ -177,9 +185,14 @@ namespace suzuha
             AkaThread.Execute();
         }
 
-        static void StreamingCodeMode()
+        static void StreamingCodeMod()
         {
             Streaming.Execute();
+        }
+
+        static void ArcaneCodeMod()
+        {
+            Arcane.Arcane.Execute();
         }
     }
 }
